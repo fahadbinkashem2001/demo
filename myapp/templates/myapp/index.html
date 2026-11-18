@@ -1,0 +1,16 @@
+{% extends 'myapp/base.html' %}
+
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<h1>Hello, Welcome</h1>
+<div>
+    <button class="my-button">Click Me</button>
+</div>
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
